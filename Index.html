@@ -5,52 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Louie Go - Front End Developer</title>
     <style>
-        /* Dark Mode Background */
+        /* 🌟 Light Mode Background */
         body {
-            background: #121212;
-            color: white;
+            background: #f8f9fa; /* Light gray background */
+            color: #333; /* Dark text for readability */
             font-family: "Poppins", Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
         }
 
-        /* Container Styling */
+        /* 🌟 Navigation Bar Styling */
+        .navbar {
+            background: #007bff; /* Blue background for navbar */
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ffcc00; /* Gold color on hover */
+        }
+
+        /* 🌟 Main Content Container */
         .container {
-            max-width: 600px;
-            margin: 50px auto;
+            max-width: 600px; /* Limits width for readability */
+            margin: 50px auto; /* Centers the content */
             padding: 30px;
-            background: #1e1e1e;
+            background: white; /* White background for contrast */
             border-radius: 12px;
-            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
-            transition: transform 0.3s ease-in-out;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+            text-align: center;
         }
 
-        .container:hover {
-            transform: scale(1.02);
-        }
-
-        /* Profile Image */
+        /* 🌟 Profile Image Styling */
         img {
-            border-radius: 50%;
+            border-radius: 50%; /* Makes the image circular */
             margin-top: 10px;
-            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.15);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s ease;
         }
 
         img:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Slight zoom-in effect on hover */
         }
 
-        /* Navigation Links */
+        /* 🌟 Navigation Buttons (Inside the Container) */
         nav {
             margin: 20px 0;
         }
 
         nav a {
-            margin: 10px;
             text-decoration: none;
-            color: #00bcd4;
+            background: #007bff; /* Blue button */
+            color: white;
             font-weight: bold;
             padding: 10px 20px;
             border-radius: 8px;
@@ -58,20 +73,21 @@
         }
 
         nav a:hover {
-            background: #00bcd4;
-            color: white;
+            background: #ffcc00; /* Gold hover effect */
+            color: black;
         }
 
-        /* Footer Styling */
+        /* 🌟 Footer Styling */
         footer {
-            background: #1e1e1e;
+            background: #007bff;
             color: white;
+            text-align: center;
             padding: 15px;
             margin-top: 30px;
             font-size: 14px;
         }
 
-        /* Smooth Animations */
+        /* 🌟 Smooth Animations */
         * {
             transition: all 0.3s ease-in-out;
         }
@@ -79,22 +95,31 @@
 </head>
 <body>
 
+    <!-- 🌟 Navigation Bar (Appears on Top of Page) -->
+   
+    <!-- 🌟 Main Content -->
     <div class="container">
         <h1>Louie Go</h1>
-        <h3 style="color: #00bcd4;">Front End Developer</h3>
+        <h3 style="color: #007bff;">Front End Developer</h3>
+        
+        <!-- Profile Picture -->
         <img src="prof_pic2.jpg" alt="Profile Picture" width="200" height="200">
+        
+        <!-- Introduction -->
         <p>
             I am an organized and detail-oriented professional with experience in administrative support, 
             customer service, and technical troubleshooting. With a background in IT and healthcare support, 
             I excel in managing records, coordinating schedules, and ensuring smooth daily operations. 
         </p>
 
+        <!-- 🌟 Navigation Buttons (Inside the Container) -->
         <nav>
             <a href="About Me.html">About Me</a>
             <a href="LouieNikko_Go_Resume.pdf" target="_blank">Resume</a>
         </nav>
     </div>
 
+    <!-- 🌟 Footer Section -->
     <footer>
         <p>&copy; 2025 Louie Go. All rights reserved.</p>
     </footer>
