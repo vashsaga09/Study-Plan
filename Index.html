@@ -1,30 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Webpage</title>
-  </head>
-  <body>
-    <h1>Louie Go</h1>
-    <h3>Front End Developer</h3>
-    <img src="prof_pic2.jpg" alt="My Image" width="200" height="200" />
-    <p>
-      I am an organized and detail-oriented professional with experience in
-      administrative support, customer service, and technical troubleshooting.
-      With a background in IT and healthcare support, I excel in managing
-      records, coordinating schedules, and ensuring smooth daily operations. I
-      have strong problem-solving skills, the ability to multitask in fast-paced
-      environments, and a commitment to providing excellent service. I am eager
-      to contribute my skills to a dynamic team where I can help improve
-      efficiency and support patient care.
-    </p>
-    <br>
-    <a href="About Me.html"> About Me</a>
-    <a href="LouieNikko_Go_Resume.pdf">Resume</a>
-    <footer id="main-footer">
-        <p>Copyright &copy; 2025, Main</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louie Go - Front End Developer</title>
+    <style>
+        /* Dark Mode Background */
+        body {
+            background: #121212;
+            color: white;
+            font-family: "Poppins", Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
 
+        /* Container Styling */
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #1e1e1e;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        /* Profile Image */
+        img {
+            border-radius: 50%;
+            margin-top: 10px;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Navigation Links */
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #00bcd4;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #00bcd4;
+            color: white;
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #1e1e1e;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        /* Smooth Animations */
+        * {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Louie Go</h1>
+        <h3 style="color: #00bcd4;">Front End Developer</h3>
+        <img src="prof_pic2.jpg" alt="Profile Picture" width="200" height="200">
+        <p>
+            I am an organized and detail-oriented professional with experience in administrative support, 
+            customer service, and technical troubleshooting. With a background in IT and healthcare support, 
+            I excel in managing records, coordinating schedules, and ensuring smooth daily operations. 
+        </p>
+
+        <nav>
+            <a href="About Me.html">About Me</a>
+            <a href="LouieNikko_Go_Resume.pdf" target="_blank">Resume</a>
+        </nav>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Louie Go. All rights reserved.</p>
     </footer>
-  </body>
+
+</body>
 </html>
