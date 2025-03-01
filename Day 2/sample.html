@@ -3,33 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
+    <title>Table with Labeled Cells</title>
     <link rel="stylesheet" href="sample.css">
 </head>
 <body>
     <table>
         <tbody>
+            <!-- Header Row -->
             <tr>
-                <th rowspan="7">ROWS</th>
+                <th rowspan="7" class="vertical-text">ROWS</th>
                 <th colspan="8">COLUMNS</th>
             </tr>
+            <!-- Column Headers -->
             <tr>
-                <td></td><td></td><td>Col 1</td><td>Col 2</td><td>Col 3</td><td>Col 4</td><td>Col 5</td><td></td>
+                <td>t3</td>
+                <td>t4</td>
+                <td>(t5)</td>
+                <td>(t6)</td>
+                <td>(t7)</td>
+                <td>(t8)</td>
+                <td>(t9)</td>
+                <td>t10</td>
+            </tr>
+            <!-- Row 1 & Row 2 -->
+            <tr>
+                <td>(t11)</td>
+                <td>t12</td>
+                <td rowspan="2">(t13)</td>
+                <td colspan="2" rowspan="2">(t14)</td>
+                <td>t15</td>
+                <td rowspan="2">(t16)</td>
+                <td>t17</td>
             </tr>
             <tr>
-                <td>Row 1</td><td></td><td rowspan="2">Row 2</td><td colspan="2" rowspan="2">Row 3</td><td></td><td rowspan="2">Row 4</td><td></td>
+                <td>(t18)</td>
+                <td>t19</td>
+                <td>(t20)</td>
+                <td>t21</td>
+            </tr>
+            <!-- Row 3 -->
+            <tr>
+                <td>(t22)</td>
+                <td>t23</td>
+                <td colspan="5" rowspan="3">(t24)</td>
+                <td>t25</td>
+            </tr>
+            <!-- Row 4 & Row 5 -->
+            <tr>
+                <td>(t26)</td>
+                <td>(t27)</td>
+                <td>(t28)</td>
             </tr>
             <tr>
-                <td>Row 2</td><td></td><td>Row 3</td><td></td>
-            </tr>
-            <tr>
-                <td>Row 3</td><td></td><td colspan="5" rowspan="3">Row 4</td><td></td>
-            </tr>
-            <tr>
-                <td>Row 4</td><td>Row 5</td><td>Row 6</td>
-            </tr>
-            <tr>
-                <td>Row 5</td><td></td><td></td>
+                <td>(t29)</td>
+                <td>t30</td>
+                <td>t31</td>
             </tr>
         </tbody>
     </table>

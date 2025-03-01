@@ -1,36 +1,70 @@
 /* Styling the table */
 table {
-    width: 80%; /* Adjust width to fit screen */
+    width: 90%; /* Adjust width for better fit */
     margin: 20px auto; /* Center the table */
     border-collapse: collapse; /* Remove double borders */
     text-align: center; /* Center text */
+    font-family: Arial, sans-serif;
 }
 
 /* Styling table headers and cells */
 th, td {
     border: 1px solid black; /* Add borders */
-    padding: 10px; /* Add spacing */
-    font-size: 18px; /* Make text readable */
+    padding: 12px; /* Increased spacing for better readability */
+    font-size: 16px; /* Readable font size */
 }
 
-/* Make headers bold */
+/* Style table headers */
 th {
-    background-color: #f4f4f4; /* Light gray background */
+    background-color: #d9d9d9; /* Light gray background */
     font-weight: bold;
+    text-transform: uppercase;
 }
 
-/* Extra styling for merged rows and columns */
+/* Extra styling for merged columns */
 td[colspan] {
     font-weight: bold;
-    background-color: #e8e8e8; /* Slightly darker background */
+    background-color: #e6e6e6; /* Light gray */
 }
 
-/* Additional adjustments */
+/* Styling for merged rows */
 td[rowspan] {
-    vertical-align: middle; /* Align vertically */
+    background-color: #f0f0f0; /* Slightly different shade */
+    vertical-align: middle; /* Align text to middle */
+    font-weight: bold;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect for better visibility */
+td:hover {
+    background-color: #dcdcdc; /* Slightly darker on hover */
 }
 
 /* Ensure equal column widths */
 td:nth-child(n+3) {
-    width: 15%;
+    width: 12%;
+}
+/* Make "ROWS" text vertical */
+.vertical-text {
+    writing-mode: vertical-rl;  /* Rotate text vertically from right to left */
+    text-orientation: upright;  /* Keep letters upright */
+    padding: 20px; /* Adjust spacing */
+    font-weight: bold; /* Ensure visibility */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    table {
+        width: 100%; /* Full width on small screens */
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
 }
