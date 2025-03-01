@@ -1,0 +1,36 @@
+/* Styling the table */
+table {
+    width: 80%; /* Adjust width to fit screen */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse; /* Remove double borders */
+    text-align: center; /* Center text */
+}
+
+/* Styling table headers and cells */
+th, td {
+    border: 1px solid black; /* Add borders */
+    padding: 10px; /* Add spacing */
+    font-size: 18px; /* Make text readable */
+}
+
+/* Make headers bold */
+th {
+    background-color: #f4f4f4; /* Light gray background */
+    font-weight: bold;
+}
+
+/* Extra styling for merged rows and columns */
+td[colspan] {
+    font-weight: bold;
+    background-color: #e8e8e8; /* Slightly darker background */
+}
+
+/* Additional adjustments */
+td[rowspan] {
+    vertical-align: middle; /* Align vertically */
+}
+
+/* Ensure equal column widths */
+td:nth-child(n+3) {
+    width: 15%;
+}

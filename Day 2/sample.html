@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <th rowspan="7">ROWS</th>
+                <th colspan="8">COLUMNS</th>
+            </tr>
+            <tr>
+                <td></td><td></td><td>Col 1</td><td>Col 2</td><td>Col 3</td><td>Col 4</td><td>Col 5</td><td></td>
+            </tr>
+            <tr>
+                <td>Row 1</td><td></td><td rowspan="2">Row 2</td><td colspan="2" rowspan="2">Row 3</td><td></td><td rowspan="2">Row 4</td><td></td>
+            </tr>
+            <tr>
+                <td>Row 2</td><td></td><td>Row 3</td><td></td>
+            </tr>
+            <tr>
+                <td>Row 3</td><td></td><td colspan="5" rowspan="3">Row 4</td><td></td>
+            </tr>
+            <tr>
+                <td>Row 4</td><td>Row 5</td><td>Row 6</td>
+            </tr>
+            <tr>
+                <td>Row 5</td><td></td><td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
