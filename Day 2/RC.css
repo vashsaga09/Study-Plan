@@ -1,0 +1,48 @@
+table {
+    width: 90%; /* Adjust width for better fit */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse; /* Remove double borders */
+    text-align: center; /* Center text */
+    font-family: Arial, sans-serif;
+}
+th, td {
+    border: 1px solid black; /* Add borders */
+    padding: 12px; /* Increased spacing for better readability */
+    font-size: 16px; /* Readable font size */
+}
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding: 20px;
+    font-weight: bold;
+}
+
+#done {
+    background-color: rgb(56, 238, 177);
+}
+
+#IP {
+    background-color: rgb(240, 61, 61);
+}
+#COL, #RW{
+    background: rgb(68, 66, 66);
+    font-weight: bold;
+    color: white;
+}
+
+.task, .time, .notes, .rmk {
+    background-color: rgb(245, 245, 54) !important; 
+
+}
+
+td:nth-child(1),
+td:nth-child(2) {
+    background-color: rgb(109, 109, 240);
+}
+td:nth-child(3) {
+    background-color: aquamarine;
+}
+
+td:nth-child(4){
+    background-color: skyblue;
+}
